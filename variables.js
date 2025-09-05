@@ -38,9 +38,11 @@ console.log(tapiocaPearls); // prints => ReferenceError (Const are constant, the
 
 /* HOISTING
  *
- * 1. When the program moves the variable to the top of the code to run it
- * TLDR: the variable can be used before it's declared
+ * 1. When the program moves around the variables and functions before the code is ran
  * 
+ * 2. Functions, variable names then variable values are moved to the top on the scope.
+ * 
+ * 3. Functions declarations are over variables, variable values are not hoisted with the variables
  */
 
 //EXAMPLE
@@ -61,6 +63,6 @@ catName = 'Biscuit';
 const catName; // => will return a syntax error
 
 // This happens because let and const are hoisted (or "moved" to the top) but the computer can't
-//properly use them until it's declared
+// properly use them until it's declared
 
 // for refence ALWAYS declare variables at the top, computer read things top to down
